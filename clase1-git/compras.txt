@@ -3,6 +3,3 @@ huevos
 banana
 avena 
 
-palta 
-manzana 
-naranja
