@@ -1,0 +1,38 @@
+h1 {
+    color: red;/*color de la tipografía*/
+    background-color: yellow;/*color de fondo*/
+    text-transform: uppercase;/*transforma el texto a mayúsculas*/
+    text-align: center;/*alineación del texto*/
+    text-shadow: 0px 35px 7px rgba(0,0,0,0.48);
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;/*tipo de letra*/
+    color:green;/*color de la tipografía*/
+    font-size: 35px;/*tamaño tipografia*/
+   
+}
+
+p {
+    color: blue;/*color de la tipografía*/
+    column-count: 2;
+    column-gap: 15px;
+}
+
+.destacados {
+    color: orange;/*color de la tipografía*/
+    font-weight: bold;/*negrita*/
+    font-style: italic;/*cursiva*/
+    
+}
+#caja {
+   background-color: lightpink;/*color de fondo*/
+   width: 300px;/*ancho de la caja*/
+   height: 500px;/*alto de la caja*/
+   padding: 20px;/*"margen interno"*/
+   border: 5px solid black;/*borde de la caja*/
+   box-sizing: border-box;
+   margin-left: 100px;/*margen izquierdo*/
+   box-shadow: -3px 16px 49px -15px rgba(0,0,0,0.57);
+}
+
