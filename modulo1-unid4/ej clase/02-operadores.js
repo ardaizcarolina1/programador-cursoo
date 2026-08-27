@@ -20,17 +20,17 @@ const a = 10;
 const b = 20;
 const c= "10";
 
-a == b; 
+a == b; // false 
 
-a === b; 
+a === b;// false
 
-a != b ; 
+a != b ; // true
 
-a !== c ; 
+a !== c ; // true
 
-a > b; 
+a > b; // false
 
-b < a; 
+b < a; // false
 
-a == b && a === c; 
-a != b || a === c; 
+a == b && a === c; // false
+a != b || a === c; // true
