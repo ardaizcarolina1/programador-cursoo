@@ -1,0 +1,124 @@
+<div class="container-fluid">
+    <div id="home" class="row align-items-center hero">
+        <div class="col-lg-3 offset-lg-2">
+            <h1>DOLOMIA</h1>
+            <p>Pizzas estilo italianas, hechas con masa madre</p>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <h3>Horno a leña</h3>
+            <p>Cocción tradicional a más de 400°C, como en Nápoles</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <h3>Masa madre 48hs</h3>
+            <p>Fermentación lenta para una masa liviana y digestiva</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <h3>Ingredientes italianos</h3>
+            <p>Mozzarella, tomate San Marzano y aceite de oliva importado</p>
+        </div>
+    </div>
+</div>
+
+<section id="pizzas" class="container py-5">
+    <h2 class="text-center mb-5">Nuestras Pizzas</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <img src="/images/margherita.jpg" class="pizza-img" alt="Pizza Margherita">
+            <h4 class="mt-3">Margherita</h4>
+            <p>Tomate San Marzano, mozzarella, albahaca</p>
+            <p><strong>$8.500</strong></p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="/images/diavola.jpg" class="pizza-img" alt="Pizza Diavola">
+            <h4 class="mt-3">Diavola</h4>
+            <p>Salami picante, mozzarella, tomate San Marzano</p>
+            <p><strong>$9.000</strong></p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="/images/4formaggi.jpg" class="pizza-img" alt="Pizza Quattro Formaggi">
+            <h4 class="mt-3">Quattro Formaggi</h4>
+            <p>Mozzarella, gorgonzola, parmesano, provolone</p>
+            <p><strong>$10.200</strong></p>
+        </div>
+    </div>
+</section>
+
+<section id="Conocenos" class="container py-5">
+    <h2 class="text-center mb-5">Conocenos</h2>
+    <div class="conocenos-contenido row align-items-center g-4">
+        <div class="col-12 col-md-5 text-center">
+            <img src="/images/parejaimg.webp" class="img-fluid rounded" alt="Pareja dueña de la pizzería">
+        </div>
+        <div class="col-12 col-md-7">
+            <p>Somos una pareja unida por una misma pasión: la buena pizza. Todo empezó como una idea entre charlas
+                de cocina y muchas pruebas en casa, hasta que decidimos animarnos a convertir ese sueño en realidad.
+                Cada uno aporta lo suyo pero los dos compartimos las mismas ganas de hacer las cosas bien, con
+                dedicación y cariño en cada pizza que sale del horno.
+                Más que un negocio, esto es un proyecto de vida que construimos juntos, día a día. Por eso, cuando
+                nos elegís, no solo estás pidiendo una pizza: estás siendo parte de nuestro proyecto.</p>
+            <p>Vení a visitarnos y disfrutá de un ambiente acogedor mientras probas nuestras deliciosas pizzas.
+                ¡Te esperamos!</p>
+        </div>
+    </div>
+</section>
+
+<section id="Visitanos" class="container py-5">
+    <h2 class="text-center mb-5">Visitanos</h2>
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2186688583533!2d-58.42269192445848!3d-34.59863167295621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2e1493a6a3%3A0x1862a7c0b8163e5d!2sUTN.BA!5e0!3m2!1ses!2sit!4v1790797797196!5m2!1ses!2sit"
+            allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+</section>
+<section id="Pedidos" class="container py-5">
+    <h2 class="text-center mb-5">Pedidos</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <form action="/pedidos" method="post">
+
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="pizza" class="form-label">Pizza</label>
+                    <select class="form-select" id="pizza" name="pizza" required>
+                        <option value="">Elegí una pizza</option>
+                        <option value="Margherita">Margherita - $8.500</option>
+                        <option value="Diavola">Diavola - $9.000</option>
+                        <option value="Quattro Formaggi">Quattro Formaggi - $10.200</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" value="1" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" name="comentarios" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100">Enviar pedido</button>
+            </form>
+            {{ message}}
+        </div>
+    </div>
+</section>
